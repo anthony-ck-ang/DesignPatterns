@@ -1,0 +1,9 @@
+package com.anthonyang;
+
+public class ExcitedToBePetOwner {
+
+	public static void main(String[] args) {
+		AnimalFarm animalFarm = new AnimalFarm();
+	}
+
+}

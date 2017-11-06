@@ -1,0 +1,7 @@
+package com.anthonyang;
+
+public class AnimalFarm {
+	public Animal getAnimal(AnimalType animalType){
+		return null;
+	}
+}

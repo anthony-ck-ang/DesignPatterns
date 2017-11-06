@@ -1,0 +1,17 @@
+package com.anthonyang;
+
+public class AnimalFarm {
+	public Animal getAnimal(AnimalType animalType){
+		
+		switch(animalType){
+		case DOG:
+			return new Dog();
+		case CAT:
+			return new Cat();
+		case RABBIT:
+			return new Cat();
+			
+		}
+		return null;
+	}
+}
