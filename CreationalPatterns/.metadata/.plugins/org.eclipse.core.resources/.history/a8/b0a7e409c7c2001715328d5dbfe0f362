@@ -1,0 +1,18 @@
+package com.anthonyang;
+
+import java.util.UUID;
+
+public class Identity {
+	private int counter;
+	
+	private Identity(){counter++;} //prevents creation of objects outside this class
+	
+	public static Identity getIdentity(){
+		return new Identity();
+	}
+
+	public int getCounter() {
+		return counter;
+	}
+
+}

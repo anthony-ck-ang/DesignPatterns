@@ -248,3 +248,15 @@ Caused by: java.lang.NullPointerException
 	at com.objectaid.uml.model.impl.Element.firePropertyChange(Element.java:176)
 	at com.objectaid.uml.cls.model.RelationshipNode.setSelfConnectionCorner(RelationshipNode.java:109)
 	... 48 more
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-06 15:36:11.633
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-06 15:36:11.642
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-06 15:36:52.279
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-06 15:36:52.293
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

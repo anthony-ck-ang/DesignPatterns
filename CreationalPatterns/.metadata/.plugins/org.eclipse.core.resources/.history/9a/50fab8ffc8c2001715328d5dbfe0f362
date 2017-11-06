@@ -1,0 +1,11 @@
+package com.anthonyang;
+
+public class App {
+	public static void main(String[] args) {
+		Identity object = Identity.getIdentity();
+		System.out.println(object.getCounter());
+		
+		Identity object2 = Identity.getIdentity();
+		System.out.println(object.getCounter());	//counter will always be 1 -> only one object is created and returned
+	}
+}

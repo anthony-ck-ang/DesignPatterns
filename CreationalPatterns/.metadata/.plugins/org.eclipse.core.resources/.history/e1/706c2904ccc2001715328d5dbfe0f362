@@ -1,0 +1,20 @@
+package com.anthonyang;
+
+public class SomeManager {
+	private SomeManager INSTANCE;
+	private int counter;
+	
+	private SomeManager(){counter++;} //prevents creation of objects outside this class
+	
+	public static SomeManager getIdentity(){
+		if(INSTANCE ==  null){
+			INSTANCE = new SomeManager();
+		}
+		return INSTANCE;
+	}
+
+	public int getCounter() {
+		return counter;
+	}
+
+}
