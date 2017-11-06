@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.anthonyang.Animal"/>
 <fullyQualifiedTypeName name="com.anthonyang.AnimalFarm"/>
 <fullyQualifiedTypeName name="com.anthonyang.AnimalType"/>
+<fullyQualifiedTypeName name="com.anthonyang.Identity"/>
+<fullyQualifiedTypeName name="java.util.UUID"/>
+<fullyQualifiedTypeName name="com.anthonyang.Animal"/>
+<fullyQualifiedTypeName name="com.anthonyang.IntegrateSingleton"/>
+<fullyQualifiedTypeName name="com.anthonyang.SomeManager"/>
 </qualifiedTypeNameHistroy>
