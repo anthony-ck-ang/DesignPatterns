@@ -1,0 +1,77 @@
+package com.anthonyang.subjects;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.anthonyang.dao.EmployeeDAO;
+import com.anthonyang.domain.Employee;
+import com.anthonyang.observers.IObserver;
+
+/**
+ * This is the subject that should be able to notify the list of observers that
+ * care for employee changes.
+ * 
+ */
+
+public class EmployeeManagementSystem implements ISubject {
+
+	private Employee emp; //save new hire here temporary
+	private String msg= null;
+	private List<IObserver> observers;
+	private List<Employee> employees;
+	private EmployeeDAO employeeDAO;
+
+	public EmployeeManagementSystem() {
+		//instantiation
+		observers = new ArrayList<IObserver>();
+		employeeDAO = new EmployeeDAO();
+		//add employees to list from DAO (injection)
+		employees = employeeDAO.generateEmployees();
+	}
+
+	//additional methods of different function can be implemented here
+	public void modifyEmployeeName(int id, String newName) {
+		boolean notify = false;
+		for (Employee emp : employees) {
+			//validate if employee exist in the collections/database
+			if (id == emp.employeeID) {
+				emp.setName(newName);
+				this.emp = emp;
+				//message can be customised here for different methods
+				this.msg = "Employee Name Changed";
+				notify = true;
+			}
+		}
+		if(notify) //if true
+			notifyObservers(); //call notify method
+	}
+
+	public void hireNewEmployee(Employee emp) {
+		this.emp = emp;
+		this.msg = "New Hire";
+		notifyObservers();
+	}
+	
+	@Override
+	public void registerObserver(IObserver addMe) {
+		// the observers added to this list, are interested in getting notified.
+		observers.add(addMe); //observers are saved to the list in this class locally.
+	}
+
+	@Override
+	public void removeObserver(IObserver removeMe) {
+		int removeIndex = observers.indexOf(removeMe);
+		observers.remove(removeIndex);
+	}
+
+
+	public void notifyObservers() {
+		//Search through the local list of observer and 
+		//invoke all the respective call me method (update/inform them)
+		for (IObserver department : observers) {    
+			department.callMe(emp, msg);		
+			//current state of employee object and msg object are pass as arguments to respective classes
+			// that implements IObserver and the callme method.
+			}
+	}
+}
