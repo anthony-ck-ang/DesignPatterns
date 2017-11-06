@@ -1,8 +1,8 @@
-# DesignPatterns
+# DesignPatterns 🔴 🔴 🔴 🔶 🔶 🔶 ⬜️ ⬜️ ⬜️ 👍 
 Design patterns that I have discovered, understand and seem to find them used frequently in frameworks/libs. 
 
 ## 1. Creational Patterns
-### 1.1 Factory Method Pattern
+### 1.1 Factory Method Pattern 🏭 
 
 1.11 Intent (Why?)
 ```
@@ -22,7 +22,7 @@ eg: frameworks -> only know about interfaces and abstract classes.
 (limit the number of objects to be created eg: Singleton -> 
 it will just return the object that was previously created)
 
-### 1.2 Builder Method Pattern
+### 1.2 Builder Method Pattern 💪 🏗 
 
 1.21 Intent (Why?)
 ```
@@ -54,7 +54,7 @@ Create an object with customisable/multiple attributes.
 - Duplicate the class’ attributes on the builder.
 
 ```
-NOTE
+NOTE ⚠️ ⚠️ ⚠️ 
 - User constructor is private -> 
 class cannot be directly instantiated from the client code.
 
