@@ -7,4 +7,12 @@
 <fullyQualifiedTypeName name="com.anthonyang.Animal"/>
 <fullyQualifiedTypeName name="com.anthonyang.IntegrateSingleton"/>
 <fullyQualifiedTypeName name="com.anthonyang.SomeManager"/>
+<fullyQualifiedTypeName name="com.anthonyang.interfaces.CheckStrategy"/>
+<fullyQualifiedTypeName name="com.anthonyang.concreteStrategy.AllWords"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.util.StringTokenizer"/>
+<fullyQualifiedTypeName name="com.anthonyang.context.StrategyType"/>
+<fullyQualifiedTypeName name="com.anthonyang.concreteStrategy.WordsLongerThan5"/>
+<fullyQualifiedTypeName name="com.anthonyang.concreteStrategy.WordsThatStartWith"/>
 </qualifiedTypeNameHistroy>
