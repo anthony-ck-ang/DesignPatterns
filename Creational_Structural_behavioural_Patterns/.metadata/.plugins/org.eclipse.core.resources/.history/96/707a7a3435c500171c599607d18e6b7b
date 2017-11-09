@@ -1,0 +1,18 @@
+package com.anthonyang.context;
+
+import com.anthonyang.concreteStrategy.AllWords;
+import com.anthonyang.interfaces.CheckStrategy;
+
+public class Context {
+	private CheckStrategy strategy; // reference the current strategy object
+
+	public Context() {
+		strategy = new AllWords();// default CheckStrategy
+	}
+	
+	//pass in as a string or the direct strategy?
+	public void changeStrategy(CheckStrategy strategy){
+		this.strategy = strategy;
+	}
+
+}

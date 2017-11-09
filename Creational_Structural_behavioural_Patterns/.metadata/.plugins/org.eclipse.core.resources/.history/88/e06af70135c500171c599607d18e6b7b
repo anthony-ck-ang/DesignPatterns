@@ -1,0 +1,7 @@
+package com.anthonyang.context;
+
+import com.anthonyang.interfaces.CheckStrategy;
+
+public class Context {
+	private CheckStrategy strategy;
+}

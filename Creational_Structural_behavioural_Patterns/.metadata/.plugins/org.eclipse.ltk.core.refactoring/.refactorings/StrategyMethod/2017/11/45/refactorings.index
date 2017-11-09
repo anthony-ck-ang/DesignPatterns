@@ -1,0 +1,7 @@
+1510218543417	Delete element
+1510218696291	Extract interface 'CheckStrategy'
+1510219238028	Delete element
+1510222738029	Rename local variable 'arr'
+1510223289736	Delete element
+1510225488644	Rename type 'WordsThatStartWith'
+1510225539760	Rename enum constant 'WORDS_THAT_START_WITH_'

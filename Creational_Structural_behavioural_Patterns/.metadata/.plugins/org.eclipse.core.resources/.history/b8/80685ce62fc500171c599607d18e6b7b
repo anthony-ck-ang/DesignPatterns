@@ -1,0 +1,13 @@
+package com.anthonyang.concreteStrategy;
+
+import com.anthonyang.interfaces.CheckStrategy;
+
+public class WordsThatStartWith implements CheckStrategy {
+
+	@Override
+	public boolean check(String s) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.anthonyang.concreteStrategy;
+
+import com.anthonyang.interfaces.CheckStrategy;
+
+public class WordsThatStartWith implements CheckStrategy {
+
+}

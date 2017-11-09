@@ -1,0 +1,14 @@
+package com.anthonyang.concreteStrategy;
+
+import com.anthonyang.interfaces.CheckStrategy;
+
+public class WordsThatStartWith implements CheckStrategy {
+	@Override
+	public boolean check(String s) {
+		if (s.equals(null) || s.length() == 0) {
+			return false;
+		}
+		return Character.toUpperCase(s.charAt(0)) == 'A';
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.anthonyang.concreteStrategy;
+
+public class WordsLongerThan5 {
+
+}

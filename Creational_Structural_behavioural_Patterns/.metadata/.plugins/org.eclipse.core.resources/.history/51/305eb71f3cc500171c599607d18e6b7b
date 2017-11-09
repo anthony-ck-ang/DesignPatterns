@@ -1,0 +1,68 @@
+package com.anthonyang.context;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+import com.anthonyang.concreteStrategy.AllWords;
+import com.anthonyang.concreteStrategy.WordsLongerThan5;
+import com.anthonyang.interfaces.CheckStrategy;
+
+public class Context {
+	private CheckStrategy strategy; // reference the current strategy
+									// object
+
+	public Context() {
+		strategy = new AllWords();// default CheckStrategy
+	}
+
+	// can leave the creation of strategy object to another class and pass in
+	// from there
+	public void changeStrategyByStrategy(CheckStrategy strategy) {
+		this.strategy = strategy;
+	}
+
+	public void changeStrategyByType(StrategyType strategyType) {
+		if (strategyType == StrategyType.ALLWORDS) {
+			this.strategy = new AllWords();
+		}
+		if (strategyType == StrategyType.WORDS_LONGER_THAN_5) {
+			this.strategy = new WordsLongerThan5();
+		}
+		if (strategyType == StrategyType.ALLWORDS) {
+			this.strategy = new AllWords();
+		}
+	}
+
+	public void filter(String filename) throws IOException {
+		BufferedReader infile = new BufferedReader(new FileReader(filename));
+		String buffer = null;
+		// read each line and save to buffer
+		while ((buffer = infile.readLine()) != null) {
+			String[] arrayOfWords = buffer.split(" ");
+			for (String s : arrayOfWords) {
+				if (strategy.check(s)) {
+					System.out.println(s);
+				}
+			}
+			// StringTokenizer words = new StringTokenizer(buffer);
+			// while(words.hasMoreTokens()){
+			// String word = words.nextToken();
+			// if (strategy.check(word)) {
+			// System.out.println(word);
+			// }
+			// }
+			// }
+		}
+
+	}
+
+	public static void main(String[] args) throws IOException {
+		String filename = args[0];
+		Context context = new Context();
+
+		context.filter(filename);
+		context.changeStrategy(StrategyType.ALLWORDS);
+
+	}
+}

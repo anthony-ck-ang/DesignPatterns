@@ -1,0 +1,11 @@
+package com.anthonyang;
+
+public class StrategyPattern {
+	// Algo Interface
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
