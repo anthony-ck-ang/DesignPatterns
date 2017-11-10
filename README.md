@@ -53,6 +53,34 @@ Create an object with customisable/multiple attributes.
 1.25 Cons of Builder Method
 - Duplicate the class’ attributes on the builder.
 
+
+
+## 2. Structural Patterns
+### 2.1 Adapter Method Pattern 💠 
+
+
+
+## 3. Behavioural Patterns
+### 3.1 Strategy Method Pattern 🤔 💭 
+3.11 Intent (Why?)
+```
+Allows for switching between different algorithms for accomplishing a task.
+eg: Different sorting algorithms for different space (memory) and time tradeoffs.
+```
+3.12 Use case (How?):
+- Different  variants of algorithms
+- Many different class that differs only in behaviours
+
+3.13 Sample code example:
+
+Program takes input:text file and produces output: filtered file
+3 different algorithms (behaviours)
+- no filter
+- Words tt start with 'A'
+- Words > 5 chars
+
+
+
 ```
 NOTE ⚠️ ⚠️ ⚠️ 
 - User constructor is private -> 
