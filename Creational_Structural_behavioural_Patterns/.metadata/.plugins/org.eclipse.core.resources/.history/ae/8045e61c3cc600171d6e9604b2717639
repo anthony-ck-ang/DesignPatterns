@@ -1,0 +1,25 @@
+package com.anthonyang;
+
+public class Cranberry extends ToppingsDecorator {
+	// by inheriting from ToppingsDecorator,
+	// Cranberry class has access to member variable of ToppingsDecorator ->
+	// tempYoghurtIcecream
+
+	public Cranberry(YogurtIceCream yoghurtIcecream) {
+		super(yoghurtIcecream); // yoghurtIcecream object is passed back to
+								// parent
+	}
+
+	@Override
+	public String getDescription() {
+		//append new description to the tempYoghurtIcecream object in parent and return it.
+		return tempYoghurtIcecream.getDescription() + ;
+	}
+
+	@Override
+	public double getPrice() {
+		// TODO Auto-generated method stub
+		return super.getPrice();
+	}
+
+}

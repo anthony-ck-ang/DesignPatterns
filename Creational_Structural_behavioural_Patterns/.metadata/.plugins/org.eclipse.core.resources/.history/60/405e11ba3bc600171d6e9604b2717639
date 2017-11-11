@@ -1,0 +1,12 @@
+package com.anthonyang;
+
+public class Cranberry extends ToppingsDecorator {
+	// by inheriting from ToppingsDecorator,
+	// Cranberry class has access to member variable of ToppingsDecorator ->
+	// tempYoghurtIcecream
+
+	public Cranberry(YogurtIceCream yoghurtIcecream) {
+		super(yoghurtIcecream);
+	}
+
+}

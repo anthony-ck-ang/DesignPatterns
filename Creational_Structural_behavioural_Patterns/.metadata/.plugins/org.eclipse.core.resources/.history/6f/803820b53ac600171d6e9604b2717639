@@ -1,0 +1,23 @@
+package com.anthonyang;
+
+public abstract class ToppingsDecorator implements YogurtIceCream {
+
+	YogurtIceCream yoghurtIcecream;
+	
+	public ToppingsDecorator(YogurtIceCream yoghurtIcecream) {
+		this.yoghurtIcecream = yoghurtIcecream;
+	}
+
+	@Override
+	public String getDescription() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public double getPrice() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

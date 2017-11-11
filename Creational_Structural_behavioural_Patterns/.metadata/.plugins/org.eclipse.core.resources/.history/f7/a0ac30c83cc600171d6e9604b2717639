@@ -1,0 +1,20 @@
+package com.anthonyang;
+
+public class Almond extends ToppingsDecorator {
+
+	public Almond(YogurtIceCream yoghurtIcecream) {
+		super(yoghurtIcecream);
+	}
+
+	@Override
+	public String getDescription() {
+		return tempYoghurtIcecream.getDescription() + " , with Almonds";
+	}
+
+	@Override
+	public double getPrice() {
+		// TODO Auto-generated method stub
+		return super.getPrice();
+	}
+
+}

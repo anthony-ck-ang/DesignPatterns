@@ -1,0 +1,16 @@
+package com.anthonyang.client;
+
+import com.anthonyang.concreteBaseProduct.PlainYogurtIceCream;
+import com.anthonyang.concreteToppings.Almond;
+import com.anthonyang.concreteToppings.Cranberry;
+import com.anthonyang.interfaces.YogurtIceCream;
+
+public class App {
+
+	public static void main(String[] args) {
+		YogurtIceCream customizedYogurtIceCream = new Almond(new Cranberry(new PlainYogurtIceCream()));
+		customizedYogurtIceCream.getDescription();
+		System.out.println(customizedYogurtIceCream.getPrice());
+	}
+
+}

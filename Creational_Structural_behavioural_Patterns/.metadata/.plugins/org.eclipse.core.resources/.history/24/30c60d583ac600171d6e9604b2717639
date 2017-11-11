@@ -1,0 +1,7 @@
+package com.anthonyang;
+
+public interface YogurtIceCream {
+
+	public String getDescription();
+	public double getPrice();
+}

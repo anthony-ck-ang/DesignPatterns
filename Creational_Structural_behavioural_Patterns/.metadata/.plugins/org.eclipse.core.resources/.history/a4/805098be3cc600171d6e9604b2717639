@@ -1,0 +1,9 @@
+package com.anthonyang;
+
+public class Almond extends ToppingsDecorator {
+
+	public Almond(YogurtIceCream yoghurtIcecream) {
+		super(yoghurtIcecream);
+	}
+
+}

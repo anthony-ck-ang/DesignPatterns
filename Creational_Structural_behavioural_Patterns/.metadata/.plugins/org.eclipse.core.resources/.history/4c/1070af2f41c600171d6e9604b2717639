@@ -1,0 +1,19 @@
+package com.anthonyang.decorator;
+
+import com.anthonyang.interfaces.YogurtIceCream;
+
+public abstract class ToppingsDecorator implements YogurtIceCream {
+
+	protected YogurtIceCream tempYoghurtIcecream;
+
+	public ToppingsDecorator(YogurtIceCream yoghurtIcecream) {
+		this.tempYoghurtIcecream = yoghurtIcecream;
+	}
+
+	public abstract String getDescription();
+
+	public double getPrice() {
+		return (Double) null;
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.anthonyang.client;
+
+import com.anthonyang.concreteBaseProduct.PlainYogurtIceCream;
+import com.anthonyang.concreteToppings.Almond;
+import com.anthonyang.concreteToppings.Cranberry;
+import com.anthonyang.interfaces.YogurtIceCream;
+
+public class App {
+
+	public static void main(String[] args) {
+		/**
+		 * At run time... The PlainYogurtIceCream is created and passed through
+		 * Cranberry class constructor when Cranberry object is created, ->
+		 * passed to and referenced in parent (ToppingsDecorator) -> The
+		 * Cranberry object is then passed through the Almond class contructor
+		 * when Almond object is created
+		 */
+		YogurtIceCream customizedYogurtIceCream = new Almond(new Cranberry(new PlainYogurtIceCream()));
+		customizedYogurtIceCream.getDescription();
+		System.out.println("Total Cost: " + customizedYogurtIceCream.getPrice());
+	}
+
+}
