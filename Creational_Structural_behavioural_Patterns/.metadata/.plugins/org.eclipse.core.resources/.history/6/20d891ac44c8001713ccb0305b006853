@@ -1,0 +1,10 @@
+package com.anthonyang.domain;
+
+public class Electronics {
+	private double price;
+
+	public Electronics(double price) {
+		this.price = price;
+	}
+	
+}

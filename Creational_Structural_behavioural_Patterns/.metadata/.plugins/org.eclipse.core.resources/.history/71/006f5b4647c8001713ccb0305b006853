@@ -1,0 +1,14 @@
+package com.anthonyang.domain;
+
+public class Fashion {
+	private double price;
+
+	public Fashion(double price) {
+		this.price = price;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+}

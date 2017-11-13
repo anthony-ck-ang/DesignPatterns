@@ -1,0 +1,6 @@
+package com.anthonyang.interfaces;
+
+public interface Visitor {
+	public double visitPuchase(Electronics electronicsItem);
+	
+}

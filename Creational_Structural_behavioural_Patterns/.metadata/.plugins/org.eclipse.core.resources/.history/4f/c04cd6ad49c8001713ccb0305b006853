@@ -1,0 +1,13 @@
+package com.anthonyang.client;
+
+import com.anthonyang.domain.Electronics;
+import com.anthonyang.domain.Fashion;
+
+public class App {
+
+	public static void main(String[] args) {
+		Electronics computer = new Electronics(2890.90);
+		Fashion coat = new Fashion(199.90);
+	}
+
+}

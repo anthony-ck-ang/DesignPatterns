@@ -1,0 +1,6 @@
+package com.anthonyang.interfaces;
+
+public interface MakeVisitable {
+	//a contract that standardize that all beans needs to 
+	public double acceptPurchase(Visitor visitor);
+}

@@ -1,0 +1,23 @@
+package com.anthonyang.domain;
+
+import com.anthonyang.interfaces.Visitor;
+
+public class Electronics {
+	private double price;
+
+	public Electronics(double price) {
+		this.price = price;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+	
+	 public double acceptFee(Visitor visitor) {
+	
+		         return visitor.visit(this);
+		
+		     }
+
+
+}

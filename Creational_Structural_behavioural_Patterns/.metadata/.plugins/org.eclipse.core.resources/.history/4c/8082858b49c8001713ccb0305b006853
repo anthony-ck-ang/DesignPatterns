@@ -1,0 +1,11 @@
+package com.anthonyang.client;
+
+import com.anthonyang.domain.Electronics;
+
+public class App {
+
+	public static void main(String[] args) {
+		Electronics computer = new Electronics(2890.90);
+	}
+
+}

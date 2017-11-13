@@ -1,0 +1,20 @@
+package com.anthonyang.concreteClass;
+
+import com.anthonyang.domain.Electronics;
+import com.anthonyang.domain.Fashion;
+import com.anthonyang.interfaces.Visitor;
+
+public class PurchaseVisitor implements Visitor {
+
+	// concrete class that implements the calculation logic.
+	@Override
+	public double visitPuchase(Electronics electronicsItem) {
+		return 0;
+	}
+
+	@Override
+	public double visitPuchase(Fashion FashionItem) {
+		return 0;
+	}
+
+}

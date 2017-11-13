@@ -1,0 +1,7 @@
+package com.anthonyang.concreteClass;
+
+import com.anthonyang.interfaces.Visitor;
+
+public class PurchaseVisitor implements Visitor {
+
+}
