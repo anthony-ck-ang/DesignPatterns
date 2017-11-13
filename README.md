@@ -4,14 +4,14 @@ Design patterns that I have discovered, understand and seem to find them used fr
 ## 1. Creational Patterns
 ### 1.1 Factory Method Pattern 🏭 
 
-1.11 Intent (Why?)
+1.1.1 Intent (Why?)
 ```
 Objective is to create class instances/objects 
 without the need to specify their class
 through invoking a factory method.
 ```
 
-1.12 Use Case (How?):
+1.1.2 Use Case (How?):
 
 - Class cannot expect the type of objects it must create (not known at compile time)
 eg: frameworks -> only know about interfaces and abstract classes.
@@ -24,25 +24,25 @@ it will just return the object that was previously created)
 
 ### 1.2 Builder Method Pattern 💪 🏗 
 
-1.21 Intent (Why?)
+1.2.1 Intent (Why?)
 ```
 Create an object with customisable/multiple attributes.
 ```
 
-1.22 Use Case (How?):
+1.2.2 Use Case (How?):
 
   - Heavy use of "Telescoping pattern" that uses overloaded constructors with different params patterns (order & type).
   - Heavy use of "Javabeans pattern" that uses default constructor + getter & setters.
   - When there are multiple overloading constructors used to create different representation of object.
 
-1.23 Cons of Telescoping/Javabeans pattern
+1.2.3 Cons of Telescoping/Javabeans pattern
   - Need to pass arguments based on constructor's param order.
   - Bad practice.
   - Not thread safe.
   - State of object changes from one to another.
  
 
-1.24 Pros of Builder Method
+1.2.4 Pros of Builder Method
 - Client code is easy to read.
 - Client knows exactly what they are setting.
 - Guide client along the way with handy methods.
@@ -56,24 +56,40 @@ Create an object with customisable/multiple attributes.
 
 
 ## 2. Structural Patterns
-### 2.1 Adapter Method Pattern 💠 
+### 2.1 Adapter Method Pattern 🔌  
 
+### 2.2 Decorator Method Pattern 💠 
+2.2.1 Intent (Why?)
+```
+Requires modification of objects dynamically at runtime
+Is an alternative to inheritance.
+```
+
+2.2.2 Use case (How?):
+- Wants functionality of inheritance using child classes  
+- Need to add functionality at run time
+
+2.2.3
+Pros of Decorator Method
+- More flexible than inheritance
+- Can add functionalities using multiple simple classes
 
 
 ## 3. Behavioural Patterns
 ### 3.1 Strategy Method Pattern 🤔 💭 
-3.11 Intent (Why?)
+3.1.1 Intent (Why?)
 ```
 Allows for switching between different algorithms for accomplishing a task.
 eg: Different sorting algorithms for different space (memory) and time tradeoffs.
 ```
-3.12 Use case (How?):
+3.1.2 Use case (How?):
 - Different  variants of algorithms
 - Many different class that differs only in behaviours
 
-3.13 Sample code example:
+3.1.3 Sample code example:
 
-Program takes input:text file and produces output: filtered file
+Program takes input:text file and produces output: filtered 
+
 3 different algorithms (behaviours)
 - no filter
 - Words tt start with 'A'

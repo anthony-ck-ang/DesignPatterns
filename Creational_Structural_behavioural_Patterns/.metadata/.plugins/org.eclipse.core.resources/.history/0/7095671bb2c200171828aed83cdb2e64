@@ -1,9 +1,0 @@
-package com.anthonyang;
-
-public class ExcitedToBePetOwner {
-
-	public static void main(String[] args) {
-		AnimalFarm.getAnimal(AnimalType.DOG);
-	}
-
-}

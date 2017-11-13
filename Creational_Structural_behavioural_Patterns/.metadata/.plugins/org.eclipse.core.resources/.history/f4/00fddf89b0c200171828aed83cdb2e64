@@ -1,5 +1,0 @@
-package com.anthonyang;
-
-public enum AnimalType {
-
-}

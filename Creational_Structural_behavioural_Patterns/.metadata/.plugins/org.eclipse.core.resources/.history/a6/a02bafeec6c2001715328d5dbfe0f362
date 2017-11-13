@@ -1,8 +1,0 @@
-package com.anthonyang;
-
-public class App {
-	public static void main(String[] args) {
-		Identity object = Identity.getIdentity();
-		System.out.println(object.getCounter());
-	}
-}
