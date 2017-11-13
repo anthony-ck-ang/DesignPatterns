@@ -1,0 +1,15 @@
+package com.anthonyang.domain;
+
+import com.anthonyang.interfaces.MakeVisitable;
+
+public class HomeAppliances implements MakeVisitable {
+	private double price;
+
+	public HomeAppliances(double price) {
+		this.price = price;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+}

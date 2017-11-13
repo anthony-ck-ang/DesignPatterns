@@ -22,8 +22,9 @@
 <fullyQualifiedTypeName name="com.anthonyang.concreteToppings.Almond"/>
 <fullyQualifiedTypeName name="com.anthonyang.concreteToppings.Cranberry"/>
 <fullyQualifiedTypeName name="com.anthonyang.interfaces.Visitor"/>
-<fullyQualifiedTypeName name="com.anthonyang.interfaces.MakeVisitable"/>
 <fullyQualifiedTypeName name="com.anthonyang.domain.Electronics"/>
 <fullyQualifiedTypeName name="com.anthonyang.domain.Fashion"/>
 <fullyQualifiedTypeName name="com.anthonyang.concreteClass.PurchaseVisitor"/>
+<fullyQualifiedTypeName name="com.anthonyang.interfaces.MakeVisitable"/>
+<fullyQualifiedTypeName name="com.anthonyang.domain.HomeAppliances"/>
 </qualifiedTypeNameHistroy>
