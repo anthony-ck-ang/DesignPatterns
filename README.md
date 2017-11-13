@@ -11,7 +11,7 @@ without the need to specify their class
 through invoking a factory method.
 ```
 
-1.1.2 Use Case (How?):
+1.1.2 Use Case (When?):
 
 - Class cannot expect the type of objects it must create (not known at compile time)
 eg: frameworks -> only know about interfaces and abstract classes.
@@ -29,7 +29,7 @@ it will just return the object that was previously created)
 Create an object with customisable/multiple attributes.
 ```
 
-1.2.2 Use Case (How?):
+1.2.2 Use Case (When?):
 
   - Heavy use of "Telescoping pattern" that uses overloaded constructors with different params patterns (order & type).
   - Heavy use of "Javabeans pattern" that uses default constructor + getter & setters.
@@ -65,7 +65,7 @@ Requires modification of objects dynamically at runtime
 Is an alternative to inheritance.
 ```
 
-2.2.2 Use case (How?):
+2.2.2 Use case (When?):
 - Wants functionality of inheritance using child classes  
 - Need to add functionality at run time
 
@@ -82,7 +82,7 @@ Pros of Decorator Method
 Allows for switching between different algorithms for accomplishing a task.
 eg: Different sorting algorithms for different space (memory) and time tradeoffs.
 ```
-3.1.2 Use case (How?):
+3.1.2 Use case (When?):
 - Different  variants of algorithms
 - Many different class that differs only in behaviours
 
@@ -95,6 +95,15 @@ Program takes input:text file and produces output: filtered
 - Words tt start with 'A'
 - Words > 5 chars
 
+### 3.2 Visitor Method Pattern 🔁 🏃 
+3.2.1 Intent (Why?)
+```
+Allows external classes (beans) of different types to use methods without altering them much.
+Can add additional methods without affecting these external classes (beans).
+
+```
+3.2.2 Use case (When?):
+- When you have to perform the same action on objects of different types.
 
 
 ```
